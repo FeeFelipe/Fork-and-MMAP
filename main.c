@@ -58,7 +58,6 @@ int main(int argc, char **argv) {
     DIE("Tasks malloc failed\n");
 
   double *shared_memory = shared_malloc(128);
-  pid_t ppid = getpid();
   pid_t pid[NUM_PROCESSOS];
 
   int process_with_one_more_work = NUM_PONTOS % NUM_PROCESSOS;
